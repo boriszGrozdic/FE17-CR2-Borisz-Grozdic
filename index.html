@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Code Review 2</title>
+</head>
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">My Planner</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">Profile</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Inbox</a>
+                            <a href="#" class="dropdown-item">Sent</a>
+                            <a href="#" class="dropdown-item">Drafts</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="d-flex">
+                    <div class="input-group">                    
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
+                    </div>
+                </form>
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white" style="background-image: url('./images/AdobeStock_104746276.webp');">
+        <h1 class="display-3 mb-3 h2 text-dark">Weekly Planner</h1>
+        <p class="text-light bg-dark opacity-75">"No president had to face as great a challenge as Abraham Lincoln. If he didn’t spend time planning and placing sensitive pieces, it’s likely that we’d be living in a very different country today. Never neglect the time and effort necessary for due diligence before action."</p>
+    </div>
+    <!-- header -->
+    
+
+    <!-- content -->
+    <div class="text-center m-2">
+        <h2>WEEKLY TASKS</h2>
+        <button id="sortBtn" type="button" class="btn btn-secondary">Sort Button</button>
+    </div>
+    
+    <div class="container text-center">
+        <div id="taskContent" class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+            
+        </div>
+    </div>
+    <!-- content -->
+
+
+    <!-- footer -->
+    <footer class="bg-dark text-center text-white">
+
+        <div class="container p-4 pb-0">
+            <section class="">
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2">
+                            <strong>Sign up for your personal planner!</strong>
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example29" class="form-control" />
+                                <label class="form-label" for="form5Example29">Email address<label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-light mb-4">Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section> 
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2022 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Borisz Grozdic</a>
+        </div>
+        
+    </footer>   
+    <!-- footer -->
+
+
+
+
+    <script src="./data.json"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

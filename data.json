@@ -1,0 +1,55 @@
+let tasks = `[{
+    "img" : "images/shopping.jpg",
+    "taskName" : "Shopping",
+    "description" : "Going out with family to buy some stuff",
+    "pLevel" : 0,
+    "deadline" : "22.7.2010"
+},{
+    "img" : "images/books.jpg",
+    "taskName" : "Books",
+    "description" : "Reading new books every week",
+    "pLevel" : 0,
+    "deadline" : "20.11.2016"
+},{
+    "img" : "images/homeMovie.jpg",
+    "taskName" : "Movie",
+    "description" : "Try to watch movies in other languages",
+    "pLevel" : 0,
+    "deadline" : "12.10.2013"
+},{
+    "img" : "images/gym.jpg",
+    "taskName" : "Gym",
+    "description" : "Every week go twice in a the gym ",
+    "pLevel" : 0,
+    "deadline" : "29.9.2018"
+},{
+    "img" : "images/friends.jpg",
+    "taskName" : "Friends",
+    "description" : "Hang out with friends more often",
+    "pLevel" : 0,
+    "deadline" : "6.10.2010"
+},{
+    "img" : "images/dog.jpeg",
+    "taskName" : "Dogg",
+    "description" : "Take your dogg for a walk in park",
+    "pLevel" : 0,
+    "deadline" : "5.12.2020"
+},{
+    "img" : "images/cleaning.webp",
+    "taskName" : "Clean",
+    "description" : "Going out with family to buy some new stuff",
+    "pLevel" : 0,
+    "deadline" : "8.4.2011"
+},{
+    "img" : "images/parents.jpg",
+    "taskName" : "Parents",
+    "description" : "Visit your familice twice per week",
+    "pLevel" : 0,
+    "deadline" : "25.10.2019"
+},{
+    "img" : "images/mom-kids-sand.webp",
+    "taskName" : "Kids",
+    "description" : "Hang out with your kids more often",
+    "pLevel" : 0,
+    "deadline" : "17.12.2016"
+}]`
