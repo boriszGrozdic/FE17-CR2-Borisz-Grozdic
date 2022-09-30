@@ -1,3 +1,21 @@
+// CHANGING COLORS
+
+let changingColor = document.getElementsByClassName("importanceAmount")
+
+printColor = () => {
+    var color = "";
+    for (let res1 in result) {
+        if(result[res1].pLevel <= 1){
+            color = "bg-success";
+        }else if (result[res1].pLevel <= 3){
+            color = "bg-warning";
+        }else {
+            color = "bg-danger"
+        }
+    }
+
+}
+
 // ADDING OBJECTS 
 
 let result = JSON.parse(tasks);
@@ -55,22 +73,4 @@ function sortByValue(){
     addEvent();
 }
 
-// CHANGING COLORS
-
-
-
-
-
-
-function changingColor(){
-  let numbersColors = res.pLevel
-    if (numbersColors< 5 ){
-        
-        document.getElementsByClassName("importanceAmount").innerHTML= `<span style= "color:green">${res.pLevel}</span>`
-    } else if(numbersColors>5) {
-        document.getElementsByClassName("importanceAmount").innerHTML= `<span style= "color:red">${res.pLevel}}</span> `
-    } 
-}
-
-document.getElementsByClassName("importanceAmount").addEventListener("click", changingColor);
 
