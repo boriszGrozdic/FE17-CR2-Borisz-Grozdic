@@ -4,7 +4,7 @@
 
 // printColor = () => {
 //     changingColor.innerHTML= "";
-//     let colors = "";
+//     var colors = "";
 //     for (let index in result) {
 //         if(result[index].pLevel <= 1){
 //             colors = "bg-success";
@@ -17,7 +17,7 @@
 // }
 
 
-// function changingColor (){
+// function changingColorFun (){
 //     let priorityNumber = document.getElementsByClassName("importanceAmount");
 //         if (priorityNumber.innerText <=1){
 //             priorityNumber.classList.add("bg-succes");
