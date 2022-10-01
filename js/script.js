@@ -1,20 +1,36 @@
 // CHANGING COLORS
 
-let changingColor = document.getElementsByClassName("importanceAmount")
+// let changingColor = document.getElementsByClassName("importanceAmount")
 
-printColor = () => {
-    var color = "";
-    for (let res1 in result) {
-        if(result[res1].pLevel <= 1){
-            color = "bg-success";
-        }else if (result[res1].pLevel <= 3){
-            color = "bg-warning";
-        }else {
-            color = "bg-danger"
-        }
-    }
+// printColor = () => {
+//     changingColor.innerHTML= "";
+//     let colors = "";
+//     for (let index in result) {
+//         if(result[index].pLevel <= 1){
+//             colors = "bg-success";
+//         }else if (result[index].pLevel <= 3){
+//             colors = "bg-warning";
+//         }else {
+//             colors = "bg-danger"
+//         }
+//     }
+// }
 
-}
+
+// function changingColor (){
+//     let priorityNumber = document.getElementsByClassName("importanceAmount");
+//         if (priorityNumber.innerText <=1){
+//             priorityNumber.classList.add("bg-succes");
+//         } else if (priorityNumber.innerText <=3){
+//             priorityNumber.classList.add("bg-warning");
+//         } else {
+//             priorityNumber.classList.add("bg-danger");
+//         }}
+
+
+// Didnt manage to change color
+
+
 
 // ADDING OBJECTS 
 
@@ -45,6 +61,7 @@ for (let res of result){
 update();
 addEvent();
 
+
 // MAX TILL 10
 
 function numbers(index){
@@ -61,6 +78,8 @@ function addEvent(){
     importanceBtn[i].addEventListener("click", function(){
         numbers(i);
     })
+    
+    
 }}
 
 // SORT FUNCTION
@@ -72,5 +91,4 @@ function sortByValue(){
     update();
     addEvent();
 }
-
 
