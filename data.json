@@ -2,7 +2,7 @@ let tasks = `[{
     "img" : "images/shopping.jpg",
     "taskName" : "Shopping",
     "description" : "Going out with family to buy some stuff",
-    "pLevel" : 0,
+    "pLevel" : 3,
     "deadline" : "22.7.2010"
 },{
     "img" : "images/books.jpg",
@@ -20,7 +20,7 @@ let tasks = `[{
     "img" : "images/gym.jpg",
     "taskName" : "Gym",
     "description" : "Every week go twice in a the gym ",
-    "pLevel" : 0,
+    "pLevel" : 5,
     "deadline" : "29.9.2018"
 },{
     "img" : "images/friends.jpg",

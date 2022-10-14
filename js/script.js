@@ -1,37 +1,3 @@
-// CHANGING COLORS
-
-// let changingColor = document.getElementsByClassName("importanceAmount")
-
-// printColor = () => {
-//     changingColor.innerHTML= "";
-//     var colors = "";
-//     for (let index in result) {
-//         if(result[index].pLevel <= 1){
-//             colors = "bg-success";
-//         }else if (result[index].pLevel <= 3){
-//             colors = "bg-warning";
-//         }else {
-//             colors = "bg-danger"
-//         }
-//     }
-// }
-
-
-// function changingColorFun (){
-//     let priorityNumber = document.getElementsByClassName("importanceAmount");
-//         if (priorityNumber.innerText <=1){
-//             priorityNumber.classList.add("bg-succes");
-//         } else if (priorityNumber.innerText <=3){
-//             priorityNumber.classList.add("bg-warning");
-//         } else {
-//             priorityNumber.classList.add("bg-danger");
-//         }}
-
-
-// Didnt manage to change color
-
-
-
 // ADDING OBJECTS 
 
 let result = JSON.parse(tasks);
@@ -47,7 +13,7 @@ for (let res of result){
                 <p class="card-text">${res.description}</p>
             </div>
             <ul class="list-group list-group-flush">
-                 <li class="list-group-item"><i class="fa fa-exclamation-triangle" style="font-size:20px"></i><p class="importanceAmount">Priority level:${res.pLevel} </p> <button class="importance-btn">Importance</button></li>
+                 <li class="list-group-item"><i class="fa fa-exclamation-triangle" style="font-size:20px"></i><p class="importanceAmount">Priority level:<span class="bg-color" style="background: ${color(res.pLevel)};">${res.pLevel}</span> </p> <button class="importance-btn">Importance</button></li>
                 <li class="list-group-item">Deadline:${res.deadline}</li>
             </ul>
             <div class="card-body">
@@ -67,8 +33,25 @@ addEvent();
 function numbers(index){
     if(result[index].pLevel !=10){
     result[index].pLevel++;
-    document.getElementsByClassName("importanceAmount")[index].innerHTML = "Priority level:" + result[index].pLevel;
-}}
+    document.getElementsByClassName("importanceAmount")[index].innerHTML = "Priority level:<span class='bg-color'>" + result[index].pLevel + "</span>";
+    if(result[index].pLevel <= 1){
+        document.getElementsByClassName("bg-color")[index].style.backgroundColor = "green";
+    }else if(result[index].pLevel <=3) {
+        document.getElementsByClassName("bg-color")[index].style.backgroundColor = "yellow";
+    }else {
+        document.getElementsByClassName("bg-color")[index].style.backgroundColor = "red";
+    }
+}
+}
+function color(qtty){
+if(qtty<=1){
+    return "green";
+}else if(qtty <=3){
+    return "yellow";
+}else{
+    return "red";
+}
+}
 
 // ADDING NUMBERS
 
@@ -86,9 +69,12 @@ function addEvent(){
 
 document.getElementById("sortBtn").onclick = sortByValue
 function sortByValue(){
-    result.sort((a, b) => a.pLevel - b.pLevel);
+    result.sort((a, b) => b.pLevel - a.pLevel);
     document.getElementById("taskContent").innerHTML = "";
-    update();
-    addEvent();
+    
+    update()
+    addEvent()
+    numbers()
+   
 }
 
